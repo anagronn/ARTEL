@@ -1,0 +1,187 @@
+.hero {
+  background: url(../assets/framebg.svg) no-repeat, linear-gradient(180deg, rgba(0, 96, 254, 0.80) 0%, #0060FE 100%);
+  background-position: 50px 80%;
+}
+
+.hero-heading {
+  margin-bottom: 118px;
+}
+
+.hero-heading span {
+  width: 100%;
+  color: var(--color-white);
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 530;
+  line-height: 84px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-heading .color {
+  color: var(--color-span);
+}
+
+.hero-heading .left {
+  display: block;
+  text-align: left;
+}
+
+.hero-heading .right {
+  display: block;
+  text-align: right;
+}
+
+
+.hero-heading .center {
+  display: block;
+  text-align: center;
+}
+
+.hero-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-examples {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.card-description {
+  max-width: 216px;
+}
+
+.choose {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 32px;
+}
+
+.phone {
+  position: fixed;
+  top: 60%;
+  right: 15%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 1px solid var(--color-white20);
+  background: var(--color-blue);
+  animation: blink 1.5s infinite;
+  z-index: 10;
+}
+
+.project-img{
+  transform: scale(1);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-img:hover{
+  transform: scale(1.05);
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+
+  50% {
+    opacity: 0.5;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.choose-caption {
+  text-align: right;
+}
+
+@media screen and (max-width: 1650px) {
+  .phone {
+    top: unset;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1295px) {
+  .hero-heading {
+    margin-bottom: 50px;
+  }
+
+  .hero-footer {
+    flex-direction: column-reverse;
+    gap: 50px;
+    align-items: flex-end;
+  }
+
+  .project-examples {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .hero {
+    background-position: center 60%;
+  }
+  
+  .hero-heading{
+    text-align: center;
+  }
+
+  .hero-heading span {
+    font-size: 100px;
+  }
+
+  .hero-heading .left,
+  .hero-heading .center,
+  .hero-heading .right {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 1045px) {
+  .hero-footer {
+    align-items: center;
+  }
+  .choose-caption {
+    text-align: center;
+  }
+  .choose {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .hero-heading span {
+    font-size: 80px;
+  }
+
+ .hero{
+  background: linear-gradient(180deg, rgba(0, 96, 254, 0.80) 0%, #0060FE 100%);
+ }
+}

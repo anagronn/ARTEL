@@ -1,0 +1,172 @@
+.review {
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  top: -40px;
+  background: url(../assets/reviewbg.png) no-repeat, linear-gradient(180deg, rgba(0, 96, 254, 1) 0%, #0060FE 100%);
+  background-position: right;
+  border-radius: 24px;
+}
+
+.review-container {
+  overflow: hidden;
+}
+
+.review-slider {
+  display: flex;
+  padding: 10px;
+  gap: 32px;
+  flex-wrap: nowrap;
+}
+
+.review-item {
+  background-color: var(--color-white10);
+  border-radius: 24px;
+  position: relative;
+  padding: 32px;
+  min-width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-item.active {
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+
+
+.review-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-number,
+.reviewer-post {
+  color: var(--color-white60);
+}
+
+.review-number span {
+  color: var(--color-white);
+}
+
+.review-info {
+  width: 70%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.review-paragraph {
+  position: relative;
+  width: 100%;
+  text-align: justify;
+}
+
+.reviewer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 860px) {
+  .review-item {
+    min-width: 500px;
+  }
+}
+
+
+@media screen and (max-width: 630px) {
+  h2 {
+    font-size: 80px;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .review-item {
+    padding: 10px;
+    gap: 20px;
+    min-width: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .review-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .section-image {
+    display: none;
+  }
+
+  .review {
+    top: 0px;
+  }
+
+  .review-paragraph,
+  .review-number,
+  .reviewer-post,
+  .reviewer-name {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .reviewer-container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+
+  h2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .review-item {
+    min-width: 300px;
+    gap: 30px;
+  }
+
+  .review-paragraph {
+    position: relative;
+    align-self: center;
+    width: 290px;
+  }
+
+  .review-slider {
+    padding: 0;
+  }
+
+  .review-paragraph,
+  .review-caption,
+  .review-number,
+  .reviewer-post,
+  .reviewer-name {
+    font-size: 12px;
+  }
+}
