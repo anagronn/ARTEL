@@ -1,0 +1,112 @@
+.map {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  min-height: 636px;
+  background-image: url(../assets/footer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  margin: 0;
+}
+
+.map-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 24px;
+}
+
+.office,
+.root,
+.consultation {
+  background-color: var(--color-white);
+  border-radius: 24px;
+  flex-grow: 1;
+  padding: 16px;
+}
+
+.office-image {
+  max-height: 96px;
+}
+
+.office {
+  display: flex;
+  gap: 32px;
+}
+
+.office-paragraph {
+  color: var(--color-dark);
+  font-weight: 600;
+}
+
+.address {
+  color: var(--color-dark60);
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.root-paragraph {
+  margin-top: 16px;
+  color: var(--color-blue);
+}
+
+.root-paragraph span {
+  color: var(--color-dark60);
+}
+
+.consultation {
+  background-color: var(--color-blue);
+}
+
+.check {
+  margin-top: 16px;
+}
+
+.check span {
+  color: rgba(255, 255, 255, 0.48);
+}
+
+.root,
+.consultation {
+  cursor: pointer;
+  width: 150px;
+}
+
+.metka {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 955px) {
+  .map {
+    min-height: 700px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+
+  .office-paragraph,
+  .root-paragraph,
+  .check,
+  .address {
+    font-size: 14px;
+  }
+
+  .office-image{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 339px) {
+
+  .metka{
+    display: none;
+  }
+}

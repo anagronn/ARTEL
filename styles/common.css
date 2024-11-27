@@ -1,0 +1,167 @@
+/*--------------------Resetting-------------------*/
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+  color: black;
+}
+
+/*--------------------Global styles-------------------*/
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url("../assets/ppneuemontreal-book.otf");
+}
+
+:root {
+  --color-span: #71A7FE;
+  --color-white: white;
+  --color-white10: rgba(255, 255, 255, 0.1);
+  --color-white20: rgba(255, 255, 255, 0.2);
+  --color-white60: rgba(255, 255, 255, 0.6);
+  --color-dark: #285CAE;
+  --color-blue: #0060FE;
+  --color-dark10: rgba(40, 92, 174, 0.1);
+  --color-dark20: rgba(40, 92, 174, 0.20);
+  --color-dark60: rgba(40, 92, 174, 0.60);
+  --color-background: #F1F6FF;
+  --color-darken: rgba(0, 14, 37, 0.80);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: 'NeueMontreal';
+  color: var(--color-dark);
+  background-color: var(--color-background);
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 32px;
+  margin-bottom: 80px;
+}
+
+p {
+  color: var(--color-white);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 530;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  color: var(--color-white);
+  font-size: 120px;
+  font-weight: 530;
+  line-height: 96px;
+}
+
+h3 {
+  color: var(--color-dark);
+  font-size: 78px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: -1.56px;
+}
+
+h4 {
+  color: var(--color-dark);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.button {
+  border-radius: 100px;
+  display: flex;
+  padding: 17px 24px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.button-light,
+.button-dark:hover {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-blue);
+  transition: all 0.5s ease-in-out;
+}
+
+.button-dark,
+.button-light:hover {
+  background-color: var(--color-blue);
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+  transition: all 0.5s ease-in-out;
+}
+
+.section-image{
+  position: relative;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 18px;
+    margin-bottom: 60px;
+  }
+
+  h2{
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container {
+    padding: 8px;
+  }
+}
+
+
+@media screen and (max-width: 560px) {
+  h3 {
+    font-size: 60px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  h3 {
+    font-size: 45px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+
+  h3,
+  h4 {
+    text-align: center;
+  }
+}
