@@ -7,17 +7,23 @@
   margin-bottom: 118px;
 }
 
-.hero-heading span {
+.hero-heading span,
+.hero-catalog-heading span {
   width: 100%;
   color: var(--color-white);
   font-size: 120px;
   font-style: normal;
-  font-weight: 530;
+  font-weight: 600;
   line-height: 84px;
   opacity: 0;
   transform: translateY(50px);
   animation: fadeInUp 1s ease-out forwards;
 }
+
+.hero-catalog-heading span {
+  font-size: 100px;
+}
+
 
 @keyframes fadeInUp {
   0% {
@@ -31,22 +37,26 @@
   }
 }
 
-.hero-heading .color {
+.hero-heading .color,
+.hero-catalog-heading .color {
   color: var(--color-span);
 }
 
-.hero-heading .left {
+.hero-heading .left,
+.hero-catalog-heading .left {
   display: block;
   text-align: left;
 }
 
-.hero-heading .right {
+.hero-heading .right,
+.hero-catalog-heading .right {
   display: block;
   text-align: right;
 }
 
 
-.hero-heading .center {
+.hero-heading .center,
+.hero-catalog-heading .center {
   display: block;
   text-align: center;
 }
@@ -92,13 +102,13 @@
   z-index: 10;
 }
 
-.project-img{
+.project-img {
   transform: scale(1);
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 
-.project-img:hover{
+.project-img:hover {
   transform: scale(1.05);
 }
 
@@ -142,14 +152,24 @@
   .project-examples {
     width: 100%;
   }
+
+  .hero-catalog-heading {
+    text-align: center;
+  }
+
+  .hero-catalog-heading .left,
+  .hero-catalog-heading .center,
+  .hero-catalog-heading .right {
+    display: inline;
+  }
 }
 
 @media screen and (max-width: 1070px) {
   .hero {
     background-position: center 60%;
   }
-  
-  .hero-heading{
+
+  .hero-heading {
     text-align: center;
   }
 
@@ -168,20 +188,24 @@
   .hero-footer {
     align-items: center;
   }
+
   .choose-caption {
     text-align: center;
   }
+
   .choose {
     align-items: center;
   }
 }
 
 @media screen and (max-width: 910px) {
-  .hero-heading span {
+
+  .hero-heading span,
+  .hero-catalog-heading span {
     font-size: 80px;
   }
 
- .hero{
-  background: linear-gradient(180deg, rgba(0, 96, 254, 0.80) 0%, #0060FE 100%);
- }
+  .hero {
+    background: linear-gradient(180deg, rgba(0, 96, 254, 0.80) 0%, #0060FE 100%);
+  }
 }

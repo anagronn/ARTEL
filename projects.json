@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "description": "Ферма КРС привязного содержания на 100 голов",
+    "price": 500,
+    "prevPrice": 1500,
+    "image": "./assets/project1.png"
+  },
+  {
+    "id": 2,
+    "description": "Современный офисный центр на 50 рабочих мест",
+    "price": 1200,
+    "prevPrice": 2500,
+    "image": "./assets/project2.png"
+  },
+  {
+    "id": 3,
+    "description": "Склад класса А для хранения товаров",
+    "price": 2000,
+    "prevPrice": 2800,
+    "image": "./assets/project3.png"
+  },
+  {
+    "id": 4,
+    "description": "Автомастерская с пятью боксами",
+    "price": 950,
+    "prevPrice": 2000,
+    "image": "./assets/project4.png"
+  },
+  {
+    "id": 5,
+    "description": "Торговый павильон на 100 м²",
+    "price": 400,
+    "prevPrice": 1000,
+    "image": "./assets/project5.png"
+  },
+  {
+    "id": 6,
+    "description": "Ферма для разведения птицы на 500 голов",
+    "price": 600,
+    "prevPrice": 1400,
+    "image": "./assets/project6.png"
+  },
+  {
+    "id": 7,
+    "description": "Гараж на 3 машины с подъемником",
+    "price": 1200,
+    "prevPrice": 2000,
+    "image": "./assets/work3.png"
+  },
+  {
+    "id": 8,
+    "description": "Малый цех для пищевого производства",
+    "price": 1000,
+    "prevPrice": 2000,
+    "image": "./assets/project8.png"
+  },
+  {
+    "id": 9,
+    "description": "Автозаправочная станция с кафе",
+    "price": 1500,
+    "prevPrice": 3000,
+    "image": "./assets/project9.png"
+  },
+  {
+    "id": 10,
+    "description": "Теплица для выращивания овощей на 200 м²",
+    "price": 500,
+    "prevPrice": 1200,
+    "image": "./assets/project10.png"
+  },
+  {
+    "id": 11,
+    "description": "Мини-гостиница на 10 номеров с кухней",
+    "price": 1800,
+    "prevPrice": 3000,
+    "image": "./assets/project11.png"
+  },
+  {
+    "id": 12,
+    "description": "Цех по переработке молочных продуктов",
+    "price": 2200,
+    "prevPrice": 3500,
+    "image": "./assets/project12.png"
+  },
+  {
+    "id": 13,
+    "description": "Магазин розничной торговли на 80 м²",
+    "price": 700,
+    "prevPrice": 1500,
+    "image": "./assets/project13.png"
+  },
+  {
+    "id": 14,
+    "description": "Склад-холодильник для хранения фруктов",
+    "price": 2500,
+    "prevPrice": 4000,
+    "image": "./assets/project14.png"
+  }
+]

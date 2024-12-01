@@ -1,0 +1,130 @@
+.catalog {
+  position: relative;
+  z-index: 2;
+  margin-top: -240px;
+}
+
+.catalog-container {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 320px);
+  gap: 50px;
+}
+
+.card-catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  width: 320px;
+  min-height: 400px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 24px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 24px;
+}
+
+.card-image {
+  width: 100%;
+  min-height: 240px;
+  border-radius: 24px;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+
+.card-description {
+  color: var(--color-dark);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  max-width: 368px;
+}
+
+.buy-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.price-project {
+  color: var(--color-dark);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  flex-shrink: 0;
+}
+
+.buy-btn {
+  flex-grow: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-catalog:hover .buy-btn {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-blue);
+}
+
+.card-catalog:hover .card-image{
+  transform: scale(1.02);
+}
+
+.prev-price-project {
+  color: rgba(40, 92, 174, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  flex-shrink: 0;
+  text-decoration-line: line-through;
+}
+
+.more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid rgba(40, 92, 174, 0.2);
+  border-radius: 100px;
+  margin-top: 32px;
+  padding: 18px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.more:hover .more-text {
+  color: var(--color-white);
+}
+
+.more:hover {
+  background-color: var(--color-blue);
+}
+
+.more-text {
+  color: var(--color-blue);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  transition: color 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1090px) {
+  .catalog-container {
+    grid-template-columns: repeat(2, 320px);
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .catalog-container {
+    grid-template-columns: repeat(1, 320px);
+  }
+}

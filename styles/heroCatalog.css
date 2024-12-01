@@ -1,0 +1,41 @@
+.hero-catalog {
+  position: relative;
+  background: url(../assets/cow.png) no-repeat, linear-gradient(180deg, rgba(0, 96, 254, 0.80) 0%, #0060FE 100%);
+  background-position: 310px bottom;
+  min-height: 790px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.hero-catalog-heading{
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1100px) {
+  .hero-catalog {
+    background-position: center bottom;
+   }
+}
+
+@media screen and (max-width: 660px) {
+  .hero-catalog {
+    background: linear-gradient(180deg, rgba(0, 96, 254, 0.80) 0%, #0060FE 100%);
+   }
+}
+
+@media screen and (max-width: 630px) {
+  .hero-catalog-heading span {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .hero-catalog-heading span {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero-catalog-heading span {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,96 @@
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1440px;
+  z-index: 1000;
+  background-color: var(--color-darken);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.modal-container.active {
+  background-color: var(--color-darken);
+}
+
+.modal {
+  position: relative;
+  width: 460px;
+  min-width: 320px;
+  padding: 64px 64px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  background-color: var(--color-white);
+  transform: translateX(0%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.modal.active {
+  transform: translateX(0%);
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.modal-heading {
+  font-size: 24px;
+}
+
+.close-btn#modal {
+  position: absolute;
+  top: 10px;
+  right: 2px;
+  flex-shrink: 0;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-main,
+.form-select {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-select {
+  gap: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-footer {
+  margin-top: 82px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-caption,
+.modal-caption,
+.form-label {
+  color: var(--color-dark60);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.modal-caption {
+  flex-grow: 1;
+}
