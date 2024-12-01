@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./styles/review.css">
   <link rel="stylesheet" href="./styles/about.css">
   <link rel="stylesheet" href="./styles/map.css">
+  <link rel="stylesheet" href="./styles/modal.css">
   <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
   <title>Artel</title>
 </head>
@@ -180,7 +181,7 @@
                 <li class="compound-list-item">Чертежи элементов конструкций.</li>
                 <li class="compound-list-item">Чертежи узлов конструкций.</li>
               </ul>
-              <div class="button button-dark" style="max-width: 228px;">Посмотреть пример</div>
+              <div class="button button-dark compound-modal-btn" style="max-width: 228px;">Посмотреть пример</div>
             </div>
           </div>
           <div class="compound-item">
@@ -219,7 +220,7 @@
                 <li class="compound-list-item">Чертежи элементов конструкций.</li>
                 <li class="compound-list-item">Чертежи узлов конструкций.</li>
               </ul>
-              <div class="button button-dark" style="max-width: 228px;">Посмотреть пример</div>
+              <div class="button button-dark compound-modal-btn" style="max-width: 228px;">Посмотреть пример</div>
             </div>
           </div>
         </div>
@@ -229,47 +230,97 @@
       <img src="./assets/image.png" alt="Project" class="section-image">
     </section>
     <section class="review container" id="review">
+      <div class="slider-btn button button-light">→</div>
       <p class="review-caption">Отзывы о готовых проектах</p>
       <h2 class="review-heading">Отзывы <br> заказчиков</h2>
       <div class="review-container">
         <div class="review-slider">
           <div class="review-item active">
             <div class="review-photo">
-              <img src="./assets/review.png" alt="Review">
+              <img src="./assets/rev1.png" alt="Review">
               <p class="review-number"><span>1</span>/5</p>
             </div>
             <div class="review-info">
-              <p class="review-paragraph">Значимость этих проблем настолько очевидна, что укрепление и развитие
-                структуры позволяет оценить значение направлений прогрессивного развития. Повседневная практика
-                показывает, что консультация с широким активом представляет собой интересный эксперимент проверки
-                дальнейших направлений развития. </p>
-
+              <p class="review-paragraph">Создание торгового комплекса в короткие сроки показало высочайший уровень
+                компании. Повседневная работа команды заслуживает высокой оценки за их подход.
               <div class="reviewer-container">
                 <div class="reviewer">
-                  <p class="reviewer-name">Анна Ивановна Иванова</p>
-                  <p class="reviewer-post">Фермер</p>
+                  <p class="reviewer-name">Мария Петровна Лазарева</p>
+                  <p class="reviewer-post">Руководитель отдела закупок "ИнвестПлаза"</p>
                 </div>
-                <div class="button button-light">СКАЧАТЬ ПРОЕКТ </div>
+                <div class="button button-light project-modal-btn">СКАЧАТЬ ПРОЕКТ </div>
               </div>
             </div>
           </div>
           <div class="review-item">
             <div class="review-photo">
-              <img src="./assets/review.png" alt="Review">
+              <img src="./assets/rev2.png" alt="Review">
               <p class="review-number"><span>2</span>/5</p>
             </div>
             <div class="review-info">
-              <p class="review-paragraph">Значимость этих проблем настолько очевидна, что укрепление и развитие
-                структуры позволяет оценить значение направлений прогрессивного развития. Повседневная практика
-                показывает, что консультация с широким активом представляет собой интересный эксперимент проверки
-                дальнейших направлений развития. </p>
+              <p class="review-paragraph">Завершение строительства офиса дало нам возможность быстрее запустить филиал.
+                Работа команды позволила оценить их профессионализм. Удобство проекта и сроки приятно удивили.</p>
 
               <div class="reviewer-container">
                 <div class="reviewer">
-                  <p class="reviewer-name">Анна Ивановна Иванова</p>
-                  <p class="reviewer-post">Фермер</p>
+                  <p class="reviewer-name">Александр Васильевич Градский</p>
+                  <p class="reviewer-post">Генеральный директор ООО "ТехСтройПроект"</p>
                 </div>
-                <div class="button button-light">СКАЧАТЬ ПРОЕКТ </div>
+                <div class="button button-light project-modal-btn">СКАЧАТЬ ПРОЕКТ </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-photo">
+              <img src="./assets/rev3.png" alt="Review">
+              <p class="review-number"><span>3</span>/5</p>
+            </div>
+            <div class="review-info">
+              <p class="review-paragraph">Проектирование и строительство бизнес-центра выполнены безукоризненно. Команда
+                учла все пожелания, а сроки и качество достойны похвалы.</p>
+
+              <div class="reviewer-container">
+                <div class="reviewer">
+                  <p class="reviewer-name">Евгений Николаевич Котов</p>
+                  <p class="reviewer-post">Владелец сети бизнес-центров</p>
+                </div>
+                <div class="button button-light project-modal-btn">СКАЧАТЬ ПРОЕКТ </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-photo">
+              <img src="./assets/rev4.png" alt="Review">
+              <p class="review-number"><span>4</span>/5</p>
+            </div>
+            <div class="review-info">
+              <p class="review-paragraph">Обновление фасада и ремонт офиса значительно улучшили впечатление клиентов.
+                Работа была проделана качественно, быстро и на высоком уровне. </p>
+
+              <div class="reviewer-container">
+                <div class="reviewer">
+                  <p class="reviewer-name">Светлана Андреевна Белова</p>
+                  <p class="reviewer-post">Управляющий партнер "Гранд Офис Групп"</p>
+                </div>
+                <div class="button button-light project-modal-btn">СКАЧАТЬ ПРОЕКТ </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-photo">
+              <img src="./assets/rev5.png" alt="Review">
+              <p class="review-number"><span>5/5</span></p>
+            </div>
+            <div class="review-info">
+              <p class="review-paragraph">Ускорение строительства склада позволило оптимизировать наши процессы. Спасибо
+                за внимание к деталям и профессионализм.</p>
+
+              <div class="reviewer-container">
+                <div class="reviewer">
+                  <p class="reviewer-name">Дмитрий Сергеевич Волков</p>
+                  <p class="reviewer-post">Исполнительный директор "БизнесСкайлайн"</p>
+                </div>
+                <div class="button button-light project-modal-btn">СКАЧАТЬ ПРОЕКТ </div>
               </div>
             </div>
           </div>
@@ -326,8 +377,7 @@
         </div>
       </div>
     </section>
-
-    <section class="map container">
+    <footer class="map container">
       <a href="https://www.google.com/maps/place/%D0%BF%D1%80.+%D0%9D%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8+15,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+%D0%91%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D1%8C/@53.8983446,27.5511934,17z/data=!3m1!4b1!4m6!3m5!1s0x46dbcfe9d59818a5:0x4251d495eeab1562!8m2!3d53.8983446!4d27.5537737!16s%2Fg%2F1tl1gkkk?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"
         target="_blank" class="metka">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -380,12 +430,14 @@
           <p class="check">Записаться <br> <span>на консультацию</span></p>
         </a>
       </div>
-    </section>
+    </footer>
 
   </div>
 
   <script src="./scripts/burger-menu.js"></script>
   <script src="./scripts/compound.js"></script>
+  <script src="./scripts/slider.js"></script>
+  <script src="./scripts/modal.js"></script>
 </body>
 
 </html>

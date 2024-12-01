@@ -74,14 +74,27 @@
 .consultation {
   cursor: pointer;
   width: 150px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.root:hover,
+.consultation:hover{
+  opacity: 0.8;
 }
 
 .metka {
   position: absolute;
   cursor: pointer;
+  opacity: 1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.metka:hover{
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 955px) {

@@ -99,7 +99,7 @@
 .burger-menu {
   width: 460px;
   min-width: 320px;
-  padding: 64px;
+  padding: 64px 64px 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
