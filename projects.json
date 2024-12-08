@@ -63,13 +63,6 @@
     "image": "./assets/project9.png"
   },
   {
-    "id": 10,
-    "description": "Теплица для выращивания овощей на 200 м²",
-    "price": 500,
-    "prevPrice": 1200,
-    "image": "./assets/project10.png"
-  },
-  {
     "id": 11,
     "description": "Мини-гостиница на 10 номеров с кухней",
     "price": 1800,
@@ -96,5 +89,40 @@
     "price": 2500,
     "prevPrice": 4000,
     "image": "./assets/project14.png"
+  },
+  {
+    "id": 8,
+    "description": "Малый цех для пищевого производства",
+    "price": 1000,
+    "prevPrice": 2000,
+    "image": "./assets/project8.png"
+  },
+  {
+    "id": 9,
+    "description": "Автозаправочная станция с кафе",
+    "price": 1500,
+    "prevPrice": 3000,
+    "image": "./assets/project9.png"
+  },
+  {
+    "id": 11,
+    "description": "Мини-гостиница на 10 номеров с кухней",
+    "price": 1800,
+    "prevPrice": 3000,
+    "image": "./assets/project11.png"
+  },
+  {
+    "id": 12,
+    "description": "Цех по переработке молочных продуктов",
+    "price": 2200,
+    "prevPrice": 3500,
+    "image": "./assets/project12.png"
+  },
+  {
+    "id": 13,
+    "description": "Магазин розничной торговли на 80 м²",
+    "price": 700,
+    "prevPrice": 1500,
+    "image": "./assets/project13.png"
   }
 ]

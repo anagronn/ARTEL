@@ -145,6 +145,10 @@
   fill: var(--color-dark);
 }
 
+.user-name {
+  color: var(--color-white);
+}
+
 .user-name,
 .burger.user-name {
   cursor: pointer;
