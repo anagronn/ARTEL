@@ -9,7 +9,6 @@
   justify-content: flex-end;
   max-width: 1440px;
   z-index: 1000;
-  background-color: var(--color-darken);
   transition: background-color 0.5s ease-in-out;
 }
 
@@ -21,17 +20,17 @@
   position: relative;
   width: 460px;
   min-width: 320px;
-  padding: 64px 64px 100px;
+  padding: 40px 40px 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 24px;
   background-color: var(--color-white);
-  transform: translateX(0%);
+  transform: translateX(150%);
   transition: transform 0.5s ease-in-out;
 }
 
-.modal.active {
+.modal-container.active .modal {
   transform: translateX(0%);
 }
 
@@ -93,4 +92,58 @@
 
 .modal-caption {
   flex-grow: 1;
+}
+
+.form-label {
+  margin-bottom: 4px;
+}
+
+.form-input {
+  width: 100%;
+  border-radius: 8px;
+  padding: 8px;
+  height: 48px;
+  transform: scale(1);
+  background-color: var(--color-dark10);
+  color: var(--color-dark);
+  transition: all 0.5s ease-in-out;
+}
+
+.form-input:hover {
+  transform: scale(1.02);
+}
+
+.form-input:focus {
+  transform: scale(1.02);
+  outline: none;
+  border: none;
+}
+
+.form-select label {
+  display: flex;
+  gap: 10px;
+  color: var(--color-dark);
+}
+
+.modal-compound{
+  position: relative;
+  margin: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.compound-modal-image{
+  position: relative;
+  width: 100%;
+}
+
+.modal-container.active .modal-compound{
+  opacity: 1;
+}
+
+@media screen and (max-width: 440px) {
+
+  .modal{
+    padding: 20px 20px 100px;
+  }
 }

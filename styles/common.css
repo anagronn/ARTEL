@@ -119,6 +119,21 @@ h4 {
   width: 100%;
 }
 
+.scroll-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  background-color: var(--color-dark20);
+  border-radius: 100%;
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  z-index: 100;
+  cursor: pointer;
+}
+
 
 @media screen and (max-width: 600px) {
   .container {

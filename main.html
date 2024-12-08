@@ -22,14 +22,14 @@
       <div class="burger-menu">
         <header class="burger-header">
           <div class="login">
-            <p class="burger user-name">Войти</p>
-            <a href="" class="burger user-account">
+            <a href="./enter.html" class="burger user-name">Войти</a>
+            <div class="burger user-account">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path
                   d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V19C4 19.55 4.45 20 5 20H19C19.55 20 20 19.55 20 19V18C20 15.34 14.67 14 12 14Z"
                   fill="white" />
               </svg>
-            </a>
+            </div>
           </div>
           <div class="close-btn">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -72,7 +72,7 @@
                 </svg></a>
             </div>
           </div>
-          <div class="button button-dark">ЗАКАЗАТЬ ЗВОНОК</div>
+          <div class="button button-dark consult">ЗАКАЗАТЬ ЗВОНОК</div>
         </div>
       </div>
     </div>
@@ -84,14 +84,14 @@
         </div>
         <div class="header-block">
           <div class="login">
-            <p class="user-name">Войти</p>
-            <a href="" class="user-account">
+            <a href="./enter.html" class="user-name">Войти</a>
+            <div class="user-account">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path
                   d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V19C4 19.55 4.45 20 5 20H19C19.55 20 20 19.55 20 19V18C20 15.34 14.67 14 12 14Z"
                   fill="white" />
               </svg>
-            </a>
+            </div>
           </div>
           <div class="burger-btn">
             <div class="line"></div>
@@ -103,7 +103,7 @@
         <h1 class="hero-heading"> <span class="left">Готовые проекты</span> <br> <span class="center"> <span
               class="color">зданий</span> для <span class="color">вашего</span> </span> <br> <span
             class="right">бизнеса</span></h1>
-        <a href="" class="phone">
+        <a href="tel:+375333146665" class="phone">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <g clip-path="url(#clip0_431_1880)">
               <path
@@ -414,7 +414,7 @@
           <p class="root-paragraph">Построить <br> <span>маршрут</span></p>
         </a>
 
-        <a href="" class="consultation">
+        <div class="consultation consult">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <g clip-path="url(#clip0_358_273)">
               <path
@@ -428,16 +428,29 @@
             </defs>
           </svg>
           <p class="check">Записаться <br> <span>на консультацию</span></p>
-        </a>
+        </div>
       </div>
     </footer>
 
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const loggedInUserName = localStorage.getItem("loggedInUserName");
 
+      if (loggedInUserName) {
+        document.querySelectorAll('.user-name').forEach((userName) => {
+          userName.textContent = loggedInUserName;
+          userName.href = ''; 
+        });
+      }
+    });
+  </script>
   <script src="./scripts/burger-menu.js"></script>
   <script src="./scripts/compound.js"></script>
   <script src="./scripts/slider.js"></script>
   <script src="./scripts/modal.js"></script>
+  <script src="./scripts/consult.js"></script>
+  <script src="./scripts/db.js"></script>
 </body>
 
 </html>

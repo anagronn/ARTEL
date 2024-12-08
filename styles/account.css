@@ -1,0 +1,115 @@
+.account-wrapper{
+  position: relative;
+  margin: 100px auto;
+  background-color: var(--color-white);
+  border-radius: 24px;
+  width: 80%;
+  min-height: 600px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.greeting{
+  text-align: center;
+}
+
+.timeline-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.timeline {
+  position: relative;
+  border-left: 3px solid var(--color-darken);
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.timeline-item .stage {
+  background-color: var(--color-darken);
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  left: -16px;
+  top: 0;
+}
+
+.timeline-item .content {
+  margin-left: 50px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.timeline-item .content.completed {
+  background-color: var(--color-blue);
+  color: #fff;
+}
+
+.timeline-item .content.active {
+  background-color: rgb(59, 221, 221);
+  color: #fff;
+}
+
+
+#dataContainer {
+  display: grid;
+  margin: 40px 0;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+
+@media screen and (max-width: 740px) {
+  #dataContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    padding: 5px;
+  }
+  
+}
+
+.data-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.data-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 1em;
+  color: #666;
+  margin: 5px 0;
+}
+
+.data-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+

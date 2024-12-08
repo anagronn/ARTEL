@@ -1,29 +1,5 @@
-const projectNames = [
-  'Торговый комплекс "ИнвестПлаза"',
-  'ОфисДом',
-  'Бизнес Центр',
-  'Гранд Офис',
-  'Склад под ключ',
-];
 
-
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.project-modal-btn').forEach((btn, index) => {
-    btn.addEventListener('click', () => {
-      const projectName = projectNames[index] || 'Неизвестный проект';
-      showModal(`Получить проект: ${projectName}`, 'проект');
-    });
-  });
-
-  document.querySelectorAll('.compound-modal-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      showModal('Получить пример комплекта чертежей', 'комплект чертежей');
-    });
-  });
-});
-
-
-function showModal(title, sendElement) {
+function showConsultModal() {
   const existingModal = document.querySelector('.modal-container');
   if (existingModal) existingModal.remove();
   const btn = document.querySelector('.close-btn');
@@ -44,8 +20,8 @@ function showModal(title, sendElement) {
         </svg>
       </div>
     <header class="modal-header">
-      <h4 class="modal-heading">${title}</h4>
-      <p class="modal-caption">Оставьте Ваши данные, и мы отправим Вам ${sendElement} удобным Вам способом.</p>
+      <h4 class="modal-heading">Получить консультацию</h4>
+      <p class="modal-caption">Оставьте Ваши данные, и мы  Вами свяжемся</p>
     </header>
     <form class="modal-form">
       <div class="form-main">
@@ -60,12 +36,6 @@ function showModal(title, sendElement) {
       <div class="form-group">
         <label for="email" class="form-label">Email</label>
         <input type="email" id="email" name="email" class="form-input" required>
-      </div>
-      <div class="form-select">
-    <label><input type="checkbox" class="form-checkbox" name="sendOptions" value="email"> Отправить по почте</label>
-    <label><input type="checkbox" class="form-checkbox" name="sendOptions" value="whatsapp"> Отправить по WhatsApp</label>
-    <label><input type="checkbox" class="form-checkbox" name="sendOptions" value="viber"> Отправить по Viber</label>
-    <label><input type="checkbox" class="form-checkbox" name="sendOptions" value="telegram"> Отправить в Telegram</label>
       </div>
       </div>
      <div class="form-footer">
@@ -82,7 +52,7 @@ function showModal(title, sendElement) {
   closeBtn.addEventListener('click', () => {
     modalContainer.classList.remove('active');
     document.body.style.overflow = 'scroll';
-    setTimeout(() => modalContainer.remove(), 500);
+    setTimeout(() => modalContainer.remove(), 500); 
   });
 
   const form = document.querySelector('.modal-form');
@@ -106,6 +76,15 @@ function showModal(title, sendElement) {
       setTimeout(() => modal.remove(), 500);
     }
 
-    alert('Ваши данные успешно сохранены! Проект будет отправлен в течение рабочего дня');
+    alert('Ваши данные успешно сохранены! Мы с вами свяжемся в ближайшее время');
   });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.consult').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      showConsultModal();
+    });
+  });
+});
+
